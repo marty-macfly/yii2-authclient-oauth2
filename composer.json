@@ -10,7 +10,7 @@
   ],
   "homepage": "https://github.com/Marty-Macfly/yii2-authclient-oauth2-server-php",
   "require": {
-    "yiisoft/yii2-authclient": "^2.0.4"
+    "yiisoft/yii2-authclient": ">=2.0.4"
   },
   "license": "BSD-3-Clause",
   "authors": [
