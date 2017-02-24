@@ -1,0 +1,28 @@
+{
+  "name": "macfly/yii2-authclient-oauth2-server-php",
+  "description": "oauth2-server-php client for yii2-authclient",
+  "type": "library",
+  "keywords": [
+    "yii2",
+    "authclient",
+    "oauth2",
+    "oauth2-server-php"
+  ],
+  "homepage": "https://github.com/Marty-Macfly/yii2-authclient-oauth2-server-php",
+  "require": {
+    "yiisoft/yii2-authclient": "~2.0.4"
+  },
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Charles DELFLY",
+      "email": "c.delfly@linkbynet.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "macfly\\authclient\\": ""
+    }
+  },
+  "minimum-stability": "stable"
+}
