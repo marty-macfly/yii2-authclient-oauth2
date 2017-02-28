@@ -25,11 +25,12 @@ php
       'clients' => [
         'oauth2-server-php' => [
           'class'             => 'macfly\authclient\OAuth2',
-          'authUrl'           => 'https://oauth2-server-php/oauth2/authorize',
-          'tokenUrl'          => 'https://oauth2-server-php/oauth2/token',
-          'apiBaseUrl'        => 'https://oauth2-server-php/oauth2',
-          'clientId'          => 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
-          'clientSecret'      => 'yyyyyyyyy',
+          'authUrl'         => 'http://193.168.5.1:8889/oauth2/authorize',
+          'tokenUrl'        => 'http://193.168.5.1:8889/oauth2/token',
+          'apiBaseUrl'      => 'http://193.168.5.1:8889/oauth2',
+#         'returnUrl'       => 'http://127.0.0.1:8888/user/security/auth?authclient=oauth2',
+          'clientId'        => 'testclient',
+          'clientSecret'    => 'testpass',
         ],
         // other clients
       ],
