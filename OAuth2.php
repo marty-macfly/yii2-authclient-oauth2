@@ -1,16 +1,14 @@
 <?php
 namespace macfly\authclient;
 
-use yii\authclient\OAuth2;
-
-class ServerPhpOAuth2 extends OAuth2
+class OAuth2 extends yii\authclient\OAuth2
 {
   /**
    * @inheritdoc
    */
   protected function defaultName()
   {
-		return 'serverphpoauth2';
+		return 'serveroauth2';
   }
 
   /**
@@ -18,15 +16,24 @@ class ServerPhpOAuth2 extends OAuth2
    */
   protected function defaultTitle()
   {
-		return 'ServerPhpOAuth2';
+		return 'ServerOAuth2';
   }
 
-  /** @inheritdoc */
+  /**
+   * @inheritdoc
+   */
 	protected function initUserAttributes()
 	{
-		return [ 'email' => 'test@test.com' ];
-	#	return $this->api('userinfo', 'GET');
+		return $this->api('user', 'GET');
 	}
+
+  /**
+   * @inheritdoc
+   */
+  public function applyAccessTokenToRequest($request, $accessToken)
+  {
+    $request->addHeaders(['Authorization' => sprintf("Bearer %s", $accessToken->getToken())]);
+  }
 
   /**
    * @inheritdoc

@@ -1,6 +1,6 @@
 {
-  "name": "macfly/yii2-authclient-oauth2-server-php",
-  "description": "oauth2-server-php client for yii2-authclient",
+  "name": "macfly/yii2-authclient-oauth2",
+  "description": "OAuth2 client for yii2-oauth2-server",
   "type": "library",
   "keywords": [
     "yii2",
@@ -8,7 +8,7 @@
     "oauth2",
     "oauth2-server-php"
   ],
-  "homepage": "https://github.com/Marty-Macfly/yii2-authclient-oauth2-server-php",
+  "homepage": "https://github.com/Marty-Macfly/yii2-authclient-oauth2",
   "require": {
     "yiisoft/yii2-authclient": ">=2.0.4"
   },
