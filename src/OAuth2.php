@@ -1,7 +1,7 @@
 <?php
 namespace macfly\authclient;
 
-class OAuth2 extends yii\authclient\OAuth2
+class OAuth2 extends \yii\authclient\OAuth2
 {
   /**
    * @inheritdoc
